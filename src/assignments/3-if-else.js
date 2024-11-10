@@ -32,7 +32,7 @@ vowel
 
 let letter=prompt('input your letter');
 
-if (typeof letter==='string' && letter.length===1) {
+if (typeof letter==='string' && letter.length===1 && /[a-z]/.test(letter)) {
     letter = letter.toLowerCase(); //To ensure the letter is case insensitive
     if (letter=== 'a'||letter=== 'e'||letter=== 'i'||letter=== 'o'||letter=== 'u') {
         console.log(`letter is vowel`)
